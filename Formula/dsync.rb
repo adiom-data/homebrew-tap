@@ -6,11 +6,11 @@ class Dsync < Formula
   license "AGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/adiom-data/homebrew-tap/releases/download/dsync-0.23.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "2abcfed7c98db686ed66f9c7482c2fa33e33f9749fb971f994a43282928b403f"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e4fffc9ae6df945ed3908db897b86c25e33eba78e769a9fe04bb221f3bb0b5d6"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "cdbdf262477d64aae432a0fe4c3e0121ffd2ec3173090c8a2749de5d53b9dc91"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "020e8f965d036d29a960a97b788ac1de3ffc4027ed715aece03a78ec9c018df4"
+    root_url "https://github.com/adiom-data/homebrew-tap/releases/download/dsync-0.24.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "26cc9decdf4cd2d10937b87aebc34df5ce37494b90b6f0e20abb598b5f374ef1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "40a02ad47f62856a4e72ae4fb08fe792f7f35d4fad3d2006b93374a472a556c1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "dd182985fdb8353a877680f4389e75a439df679cc6cd871497fa4039fdc65cd8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e56b5bbd30d353f7dabdbf2b733919c0aed6caae8b25ea21116cc60b98aedd6b"
   end
 
   depends_on "go" => :build
