@@ -1,8 +1,8 @@
 class Dsync < Formula
   desc "Database migration and synchronization tool"
   homepage "https://adiom.io"
-  url "https://github.com/adiom-data/dsync/archive/refs/tags/v0.24.0.tar.gz"
-  sha256 "ced4f5d8b65f2e239a5d671f7c071c52c9e1d10bfd4a8995caf3b36e8448099f"
+  url "https://github.com/adiom-data/dsync/archive/refs/tags/v0.26.0.tar.gz"
+  sha256 "95a58d7fbe657bc7297d03f11a71d40faeb39f865970dcfc9639488bf4876570"
   license "AGPL-3.0-or-later"
 
   bottle do
