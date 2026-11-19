@@ -11,11 +11,10 @@ class Dsync < Formula
   end
 
   bottle do
-    root_url "https://github.com/adiom-data/homebrew-tap/releases/download/dsync-0.26.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "cb5ded1bbff450a2078598c2fb89e88a08629001cdb42e668b34ba7c464381bf"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9a8a0a4316bfc66209fc72d73782cebc0c6f9f23d3547d64db89f249211c5e4a"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "1e8e7379186308424952923e5fe095b9c6c6e7245b3e76fe5d02ab64b01fee6a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4f06686d18d5a2a58bb11703b9d2c044d7fbc03a341ac3a00f9ca8e60d334c8f"
+    root_url "https://github.com/adiom-data/homebrew-tap/releases/download/dsync-0.31.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "e8950e8ed839e87addb9c19f9229c55ae2f99762cc6a529e772a314b7fdd6b2b"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "79a90154a3fcfaf7e9f7214590dee318139220dbaed7b365a04befa652cfac4c"
+    sha256 cellar: :any,                 x86_64_linux:  "6d4c521421a05272618f88dec7e4b28b35d19da113252cbde855eee6f315fbec"
   end
 
   depends_on "go" => :build
