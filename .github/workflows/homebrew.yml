@@ -13,7 +13,7 @@ jobs:
   homebrew:
     runs-on: macos-latest
     steps:
-      - uses: dawidd6/action-homebrew-bump-formula@v3
+      - uses: dawidd6/action-homebrew-bump-formula@v11
         with:
           token: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
           tap: adiom-data/homebrew-tap
