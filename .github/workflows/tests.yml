@@ -9,8 +9,11 @@ on:
 jobs:
   test-bot:
     strategy:
+      fail-fast: false
       matrix:
-        os: [ ubuntu-22.04, macos-15-intel, macos-26, macos-15, macos-14 ]
+        # ubuntu-22.04's glibc is too old for current Homebrew (brew doctor fails);
+        # macos-14 runners are no longer supported by GitHub.
+        os: [ ubuntu-24.04, macos-15-intel, macos-26, macos-15 ]
     runs-on: ${{ matrix.os }}
     permissions:
       actions: read
