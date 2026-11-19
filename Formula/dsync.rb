@@ -5,6 +5,11 @@ class Dsync < Formula
   sha256 "95a58d7fbe657bc7297d03f11a71d40faeb39f865970dcfc9639488bf4876570"
   license "AGPL-3.0-or-later"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   bottle do
     root_url "https://github.com/adiom-data/homebrew-tap/releases/download/dsync-0.26.0"
     sha256 cellar: :any_skip_relocation, arm64_tahoe:   "cb5ded1bbff450a2078598c2fb89e88a08629001cdb42e668b34ba7c464381bf"

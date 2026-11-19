@@ -1,7 +1,14 @@
 name: Homebrew Bump Formula
+
+# The formula tracks releases of adiom-data/dsync, which live in another repo,
+# so a release event here never fires for them. Instead, check dsync's latest
+# GitHub release daily (and on demand) and open a bump PR when it is newer.
+# The PR then goes through brew test-bot; add the `pr-pull` label to publish bottles.
 on:
-  release:
-    types: [published]
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+
 jobs:
   homebrew:
     runs-on: macos-latest
@@ -9,4 +16,6 @@ jobs:
       - uses: dawidd6/action-homebrew-bump-formula@v3
         with:
           token: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+          tap: adiom-data/homebrew-tap
           formula: dsync
+          livecheck: true
